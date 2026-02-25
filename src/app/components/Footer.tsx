@@ -12,7 +12,7 @@ export function Footer() {
       { label: 'About Us', href: '#about' },
       { label: 'Careers', href: '#' },
       { label: 'Blog', href: '#' },
-      { label: 'Contact', href: '#' },
+      { label: 'Contact', href: 'mailto:contact@placemax.in' },
     ],
     resources: [
       { label: 'Documentation', href: '#' },
@@ -41,52 +41,53 @@ export function Footer() {
           {/* Brand Column */}
           <div className="lg:col-span-2 space-y-6">
             <div className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-xl flex items-center justify-center shadow-lg" style={{ backgroundColor: '#2CA6A4' }}>
-                <span className="text-white font-bold text-xl">P</span>
-              </div>
-              <span className="font-bold text-2xl text-white">
-                Place<span style={{ color: '#F28C38' }}>Max</span>
-              </span>
+              <img
+                src="/logo.png"
+                alt="PlaceMax Logo"
+                className="h-12 w-auto brightness-0 invert"
+              />
             </div>
             <p className="text-white/80 leading-relaxed">
-              The intelligence layer behind campus hiring. Transforming tier-2/3 colleges into 
+              The intelligence layer behind campus hiring. Transforming tier-2/3 colleges into
               placement powerhouses through AI-powered training and recruitment infrastructure.
             </p>
-            
+
             {/* Contact Info */}
             <div className="space-y-3">
-              <div className="flex items-center gap-3 text-white/70 hover:text-white transition-colors">
+              <a href="mailto:contact@placemax.in" className="flex items-center gap-3 text-white/70 hover:text-white transition-colors">
                 <Mail className="w-4 h-4" />
-                <span className="text-sm">contact@placemax.ai</span>
-              </div>
-              <div className="flex items-center gap-3 text-white/70 hover:text-white transition-colors">
+                <span className="text-sm">contact@placemax.in</span>
+              </a>
+              <a href="tel:+919207671797" className="flex items-center gap-3 text-white/70 hover:text-white transition-colors">
                 <Phone className="w-4 h-4" />
-                <span className="text-sm">+91 XXX-XXX-XXXX</span>
-              </div>
+                <span className="text-sm">+91 9207671797</span>
+              </a>
               <div className="flex items-center gap-3 text-white/70 hover:text-white transition-colors">
                 <MapPin className="w-4 h-4" />
-                <span className="text-sm">Mumbai, India</span>
+                <span className="text-sm">Kochi, Kerala</span>
               </div>
             </div>
 
             {/* Social Links */}
             <div className="flex gap-3">
-              <a 
-                href="#" 
+              <a
+                href="https://www.linkedin.com/company/placemax/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-11 h-11 rounded-xl flex items-center justify-center transition-all hover:scale-110"
                 style={{ backgroundColor: '#2CA6A4' }}
               >
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a 
-                href="#" 
+              <a
+                href="#"
                 className="w-11 h-11 rounded-xl flex items-center justify-center transition-all hover:scale-110"
                 style={{ backgroundColor: '#F28C38' }}
               >
                 <Twitter className="w-5 h-5" />
               </a>
-              <a 
-                href="#" 
+              <a
+                href="mailto:contact@placemax.in"
                 className="w-11 h-11 rounded-xl flex items-center justify-center transition-all hover:scale-110"
                 style={{ backgroundColor: '#4CAF50' }}
               >
@@ -158,8 +159,14 @@ export function Footer() {
             <p className="text-sm text-white/60">
               © 2026 PlaceMax. All rights reserved.
             </p>
+            <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10">
+              <span className="w-2 h-2 rounded-full animate-pulse" style={{ backgroundColor: '#F28C38' }}></span>
+              <p className="text-sm font-medium text-white/80">
+                PlaceMax is in beta now but progressing fast
+              </p>
+            </div>
             <p className="text-sm text-white/60">
-              Made with <span style={{ color: '#F28C38' }}>♥</span> for the future of campus hiring
+              Made with <span style={{ color: '#F28C38' }}>♥</span> for the future of T&P
             </p>
           </div>
         </div>

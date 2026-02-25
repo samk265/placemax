@@ -19,12 +19,11 @@ export function Navigation() {
           {/* Logo */}
           <div className="flex items-center">
             <a href="#" className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-xl flex items-center justify-center shadow-lg" style={{ backgroundColor: '#2CA6A4' }}>
-                <span className="text-white font-bold text-xl">P</span>
-              </div>
-              <span className="font-bold text-2xl" style={{ color: '#1F4E79' }}>
-                Place<span style={{ color: '#F28C38' }}>Max</span>
-              </span>
+              <img
+                src="/logo.png"
+                alt="PlaceMax Logo"
+                className="h-14 w-auto"
+              />
             </a>
           </div>
 
@@ -40,11 +39,14 @@ export function Navigation() {
                 {item.label}
               </a>
             ))}
-            <Button 
+            <Button
+              asChild
               className="shadow-lg font-semibold"
               style={{ backgroundColor: '#F28C38', color: 'white' }}
             >
-              Get Started
+              <a href="mailto:contact@placemax.in?subject=Get Started with PlaceMax">
+                Get Started
+              </a>
             </Button>
           </div>
 
@@ -72,11 +74,14 @@ export function Navigation() {
                 {item.label}
               </a>
             ))}
-            <Button 
+            <Button
+              asChild
               className="w-full shadow-lg font-semibold"
               style={{ backgroundColor: '#F28C38', color: 'white' }}
             >
-              Get Started
+              <a href="mailto:contact@placemax.in?subject=Get Started with PlaceMax">
+                Get Started
+              </a>
             </Button>
           </div>
         )}

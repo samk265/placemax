@@ -1,97 +1,70 @@
 import { Button } from './ui/button';
 import { ArrowRight, FileCheck } from 'lucide-react';
-import { ImageWithFallback } from './figma/ImageWithFallback';
 
 export function Hero() {
   return (
-    <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#2CA6A4' }}>
-      <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Left Content */}
-          <div className="space-y-8">
-            <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border-2 border-white/30 bg-white/10 backdrop-blur-sm">
-              <span className="w-2 h-2 rounded-full animate-pulse" style={{ backgroundColor: '#4CAF50' }}></span>
-              <span className="text-sm font-medium text-white">AI-Native Campus Hiring Infrastructure</span>
-            </div>
-            
-            <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.1]">
-              India's Leading AI-Powered Training and Placement Partner
-            </h1>
-            
-            <p className="text-xl text-white/90 leading-relaxed">
-              End-to-end AI-integrated Training & Placement support for tier-2/3 colleges. Transform campus hiring with structured training, AI-powered matching, and guaranteed placement outcomes.
-            </p>
+    <section className="relative pt-40 pb-24 px-4 sm:px-6 lg:px-8 overflow-hidden" style={{ backgroundColor: '#2CA6A4' }}>
+      {/* Background Decorative Elements for Visual Interest without Images */}
+      <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(#fff 1.5px, transparent 1.5px)', backgroundSize: '32px 32px' }}></div>
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full">
+        <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full blur-[120px] opacity-20" style={{ backgroundColor: '#F28C38' }}></div>
+        <div className="absolute bottom-[20%] right-[-5%] w-[30%] h-[30%] rounded-full blur-[100px] opacity-20" style={{ backgroundColor: '#4CAF50' }}></div>
+      </div>
 
-            <p className="text-lg text-white/80 leading-relaxed">
+      <div className="max-w-5xl mx-auto relative z-10 text-center">
+        <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border-2 border-white/30 bg-white/10 backdrop-blur-sm mb-10 animate-fade-in shadow-xl">
+          <span className="w-2.5 h-2.5 rounded-full animate-pulse flex-shrink-0" style={{ backgroundColor: '#4CAF50' }}></span>
+          <span className="text-sm font-bold text-white tracking-widest uppercase">AI-Native Campus Hiring Infrastructure</span>
+          <div className="px-2 py-0.5 rounded text-[10px] font-black bg-[#F28C38] text-white ml-2 shadow-sm uppercase tracking-tighter">Beta</div>
+        </div>
+
+        <h1 className="text-5xl sm:text-7xl lg:text-8xl font-extrabold text-white leading-[1.05] tracking-tight mb-10">
+          India's Leading <br className="hidden sm:block" />
+          <span className="text-white/90">AI-Powered</span> <br className="hidden sm:block" />
+          <span style={{ color: '#F28C38' }}>Training and Placement</span> Partner
+        </h1>
+
+        <div className="max-w-3xl mx-auto space-y-8 mb-14">
+          <p className="text-xl sm:text-2xl text-white font-medium leading-relaxed">
+            End-to-end AI-integrated Training & Placement support for tier-2/3 colleges. Transform campus hiring with structured training, AI-powered matching, and guaranteed placement outcomes.
+          </p>
+
+          <div className="pt-4 border-t border-white/10">
+            <p className="text-lg sm:text-xl text-white/80 leading-relaxed italic">
               We handle training, virtual placement drives, and job matching across Engineering, Management, Commerce & Science streams.
             </p>
-
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                size="lg" 
-                className="text-lg px-8 py-6 shadow-2xl font-semibold hover:scale-105 transition-transform"
-                style={{ backgroundColor: '#F28C38', color: 'white' }}
-              >
-                Get a Free Pilot
-                <ArrowRight className="w-5 h-5 ml-2" />
-              </Button>
-              <Button 
-                size="lg" 
-                className="text-lg px-8 py-6 border-2 font-semibold hover:scale-105 transition-transform"
-                style={{ 
-                  backgroundColor: 'white',
-                  color: '#1F4E79',
-                  borderColor: 'white'
-                }}
-              >
-                <FileCheck className="w-5 h-5 mr-2" />
-                Get Free Assessment
-              </Button>
-            </div>
-
-            {/* Key Stats */}
-            <div className="grid grid-cols-3 gap-6 pt-8">
-              <div className="text-center lg:text-left">
-                <div className="text-4xl font-bold text-white">85%</div>
-                <div className="text-sm text-white/80 mt-1">Placement Success</div>
-              </div>
-              <div className="text-center lg:text-left">
-                <div className="text-4xl font-bold text-white">500+</div>
-                <div className="text-sm text-white/80 mt-1">Hiring Partners</div>
-              </div>
-              <div className="text-center lg:text-left">
-                <div className="text-4xl font-bold text-white">50K+</div>
-                <div className="text-sm text-white/80 mt-1">Students Trained</div>
-              </div>
-            </div>
-          </div>
-
-          {/* Right Image */}
-          <div className="relative">
-            <div className="absolute inset-0 rounded-3xl blur-3xl opacity-30" style={{ backgroundColor: '#F28C38' }}></div>
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl border-8 border-white">
-              <ImageWithFallback
-                src="https://images.unsplash.com/photo-1759661966728-4a02e3c6ed91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXRhJTIwYW5hbHl0aWNzJTIwZGFzaGJvYXJkJTIwZ3JhcGh8ZW58MXx8fHwxNzcwOTU1ODk3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                alt="AI-powered placement analytics dashboard"
-                className="w-full h-[550px] object-cover"
-              />
-              {/* Floating Stats Card */}
-              <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm rounded-2xl p-6 shadow-xl">
-                <div className="flex items-center justify-between">
-                  <div>
-                    <div className="text-sm mb-1" style={{ color: '#1F4E79' }}>Real-time Analytics</div>
-                    <div className="text-2xl font-bold" style={{ color: '#1F4E79' }}>AI-Powered Insights</div>
-                  </div>
-                  <div className="w-12 h-12 rounded-full flex items-center justify-center" style={{ backgroundColor: '#4CAF50' }}>
-                    <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
+
+        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-20">
+          <Button
+            asChild
+            size="lg"
+            className="text-xl px-12 py-8 shadow-2xl font-bold hover:scale-105 transition-all duration-300 ring-4 ring-white/10"
+            style={{ backgroundColor: '#F28C38', color: 'white' }}
+          >
+            <a href="mailto:contact@placemax.in?subject=Request for Free Pilot&body=I am interested in a free pilot for our college.">
+              Get a Free Pilot
+              <ArrowRight className="w-6 h-6 ml-3" />
+            </a>
+          </Button>
+          <Button
+            asChild
+            size="lg"
+            className="text-xl px-12 py-8 border-2 font-bold hover:scale-105 transition-all duration-300 bg-white/5 backdrop-blur-sm shadow-xl"
+            style={{
+              backgroundColor: 'white',
+              color: '#1F4E79',
+              borderColor: 'white'
+            }}
+          >
+            <a href="mailto:contact@placemax.in?subject=Request for Free Assessment&body=I would like to request a free assessment for our students.">
+              <FileCheck className="w-6 h-6 mr-3" />
+              Get Free Assessment
+            </a>
+          </Button>
+        </div>
+
       </div>
     </section>
   );

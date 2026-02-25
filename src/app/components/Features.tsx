@@ -78,7 +78,7 @@ export function Features() {
             Complete Training & Placement Management Platform
           </h3>
           <p className="text-xl leading-relaxed" style={{ color: '#1F4E79', opacity: 0.7 }}>
-            PlaceMax combines cutting-edge AI technology with proven placement methodologies 
+            PlaceMax combines cutting-edge AI technology with proven placement methodologies
             to create a seamless bridge between talent and opportunity.
           </p>
         </div>
@@ -88,29 +88,34 @@ export function Features() {
           {features.map((feature) => {
             const Icon = feature.icon;
             return (
-              <Card 
+              <Card
                 key={feature.title}
                 className="border-2 transition-all hover:shadow-2xl group relative overflow-hidden bg-white"
                 style={{ borderColor: '#E5E7EB' }}
               >
                 {/* Hover Background */}
-                <div 
+                <div
                   className="absolute inset-0 opacity-0 group-hover:opacity-5 transition-opacity"
                   style={{ backgroundColor: feature.iconBg }}
                 ></div>
-                
+
                 <CardHeader className="relative p-6">
                   <div className="w-14 h-14 rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform shadow-lg" style={{ backgroundColor: feature.iconBg }}>
                     <Icon className="w-7 h-7 text-white" />
                   </div>
-                  <CardTitle className="text-lg mb-3" style={{ color: '#1F4E79' }}>{feature.title}</CardTitle>
+                  <CardTitle className="text-lg mb-3 flex items-center justify-between gap-2" style={{ color: '#1F4E79' }}>
+                    {feature.title}
+                    {feature.title.includes('AI') && (
+                      <span className="px-1.5 py-0.5 rounded text-[9px] font-black bg-gray-100 text-gray-500 border border-gray-200 uppercase tracking-tighter">Beta</span>
+                    )}
+                  </CardTitle>
                   <CardDescription className="text-sm leading-relaxed" style={{ color: '#1F4E79', opacity: 0.7 }}>
                     {feature.description}
                   </CardDescription>
                 </CardHeader>
 
                 {/* Accent Border on Hover */}
-                <div 
+                <div
                   className="absolute bottom-0 left-0 right-0 h-1.5 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"
                   style={{ backgroundColor: feature.accentColor }}
                 ></div>
