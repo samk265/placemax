@@ -12,7 +12,7 @@ export function Footer() {
       { label: 'About Us', href: '#about' },
       { label: 'Careers', href: '#' },
       { label: 'Blog', href: '#' },
-      { label: 'Contact', href: 'mailto:contact@placemax.in' },
+      { label: 'Contact', href: 'mailto:placemax.info@gmail.com' },
     ],
     resources: [
       { label: 'Documentation', href: '#' },
@@ -54,9 +54,9 @@ export function Footer() {
 
             {/* Contact Info */}
             <div className="space-y-3">
-              <a href="mailto:contact@placemax.in" className="flex items-center gap-3 text-white/70 hover:text-white transition-colors">
+              <a href="mailto:placemax.info@gmail.com" className="flex items-center gap-3 text-white/70 hover:text-white transition-colors">
                 <Mail className="w-4 h-4" />
-                <span className="text-sm">contact@placemax.in</span>
+                <span className="text-sm">placemax.info@gmail.com</span>
               </a>
               <a href="tel:+919207671797" className="flex items-center gap-3 text-white/70 hover:text-white transition-colors">
                 <Phone className="w-4 h-4" />
@@ -87,7 +87,7 @@ export function Footer() {
                 <Twitter className="w-5 h-5" />
               </a>
               <a
-                href="mailto:contact@placemax.in"
+                href="mailto:placemax.info@gmail.com"
                 className="w-11 h-11 rounded-xl flex items-center justify-center transition-all hover:scale-110"
                 style={{ backgroundColor: '#4CAF50' }}
               >

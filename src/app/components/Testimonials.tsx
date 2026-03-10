@@ -46,7 +46,7 @@ export function Testimonials() {
             </span>
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#1F4E79' }}>
-            150+ Colleges Trust PlaceMax
+            2+ Partner Institutes
           </h2>
           <p className="text-xl" style={{ color: '#1F4E79', opacity: 0.7 }}>
             Real placement results from tier 2/3 colleges across Engineering, Management, Commerce & Science

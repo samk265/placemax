@@ -26,7 +26,7 @@ export function CTA() {
                 Ready to Transform Campus Hiring?
               </h2>
               <p className="text-xl lg:text-2xl mb-10 max-w-3xl mx-auto opacity-95 leading-relaxed">
-                Join 200+ colleges already leveraging PlaceMax to achieve industry-leading placement outcomes.
+                Join 2+ institutes already leveraging PlaceMax to achieve industry-leading placement outcomes.
                 See how AI-powered intelligence can revolutionize your T&P operations.
               </p>
 
@@ -37,7 +37,7 @@ export function CTA() {
                   className="text-lg px-10 py-7 shadow-xl font-semibold hover:scale-105 transition-transform"
                   style={{ backgroundColor: '#F28C38', color: 'white' }}
                 >
-                  <a href="mailto:contact@placemax.in?subject=Schedule a Demo&body=I would like to schedule a demo of PlaceMax for our institution.">
+                  <a href="mailto:placemax.info@gmail.com?subject=Schedule a Demo&body=I would like to schedule a demo of PlaceMax for our institution.">
                     Schedule Demo
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </a>
@@ -52,16 +52,16 @@ export function CTA() {
                     borderColor: 'white'
                   }}
                 >
-                  <a href="mailto:contact@placemax.in?subject=Request Brochure&body=I would like to request a brochure for PlaceMax.">
+                  <a href="mailto:placemax.info@gmail.com?subject=Request Brochure&body=I would like to request a brochure for PlaceMax.">
                     Download Brochure
                   </a>
                 </Button>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-6 justify-center items-center pt-6 border-t border-white/20">
-                <a href="mailto:contact@placemax.in" className="flex items-center gap-3 bg-white/10 backdrop-blur-sm px-5 py-3 rounded-full hover:bg-white/20 transition-colors">
+                <a href="mailto:placemax.info@gmail.com" className="flex items-center gap-3 bg-white/10 backdrop-blur-sm px-5 py-3 rounded-full hover:bg-white/20 transition-colors">
                   <Mail className="w-5 h-5" />
-                  <span className="font-medium">contact@placemax.in</span>
+                  <span className="font-medium">placemax.info@gmail.com</span>
                 </a>
                 <a href="tel:+919207671797" className="flex items-center gap-3 bg-white/10 backdrop-blur-sm px-5 py-3 rounded-full hover:bg-white/20 transition-colors">
                   <Phone className="w-5 h-5" />

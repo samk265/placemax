@@ -7,6 +7,7 @@ import { Testimonials } from './components/Testimonials';
 import { ForWhom } from './components/ForWhom';
 import { Differentiators } from './components/Differentiators';
 import { CTA } from './components/CTA';
+import { QnA } from './components/QnA';
 import { Navigation } from './components/Navigation';
 import { Footer } from './components/Footer';
 
@@ -22,6 +23,7 @@ export default function App() {
       <Testimonials />
       <ForWhom />
       <Differentiators />
+      <QnA />
       <CTA />
       <Footer />
     </div>

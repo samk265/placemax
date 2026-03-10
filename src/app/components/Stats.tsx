@@ -22,8 +22,8 @@ export function Stats() {
                 </svg>
               </div>
             </div>
-            <div className="text-5xl font-bold mb-2" style={{ color: '#4CAF50' }}>200+</div>
-            <div className="text-white/80 font-medium">Partner Colleges</div>
+            <div className="text-5xl font-bold mb-2" style={{ color: '#4CAF50' }}>2+</div>
+            <div className="text-white/80 font-medium">Partner Institutes</div>
           </div>
           
           <div className="text-center group">
@@ -34,7 +34,7 @@ export function Stats() {
                 </svg>
               </div>
             </div>
-            <div className="text-5xl font-bold mb-2" style={{ color: '#4CAF50' }}>85%</div>
+            <div className="text-5xl font-bold mb-2" style={{ color: '#4CAF50' }}>80%</div>
             <div className="text-white/80 font-medium">Placement Success</div>
           </div>
           
@@ -46,7 +46,7 @@ export function Stats() {
                 </svg>
               </div>
             </div>
-            <div className="text-5xl font-bold mb-2" style={{ color: '#4CAF50' }}>50K+</div>
+            <div className="text-5xl font-bold mb-2" style={{ color: '#4CAF50' }}>100+</div>
             <div className="text-white/80 font-medium">Students Trained</div>
           </div>
           
@@ -58,7 +58,7 @@ export function Stats() {
                 </svg>
               </div>
             </div>
-            <div className="text-5xl font-bold mb-2" style={{ color: '#4CAF50' }}>500+</div>
+            <div className="text-5xl font-bold mb-2" style={{ color: '#4CAF50' }}>3+</div>
             <div className="text-white/80 font-medium">Hiring Partners</div>
           </div>
         </div>

@@ -44,7 +44,7 @@ export function Navigation() {
               className="shadow-lg font-semibold"
               style={{ backgroundColor: '#F28C38', color: 'white' }}
             >
-              <a href="mailto:contact@placemax.in?subject=Get Started with PlaceMax">
+              <a href="mailto:placemax.info@gmail.com?subject=Get Started with PlaceMax">
                 Get Started
               </a>
             </Button>
@@ -79,7 +79,7 @@ export function Navigation() {
               className="w-full shadow-lg font-semibold"
               style={{ backgroundColor: '#F28C38', color: 'white' }}
             >
-              <a href="mailto:contact@placemax.in?subject=Get Started with PlaceMax">
+              <a href="mailto:placemax.info@gmail.com?subject=Get Started with PlaceMax">
                 Get Started
               </a>
             </Button>

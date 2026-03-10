@@ -43,7 +43,7 @@ export function Hero() {
             className="text-xl px-12 py-8 shadow-2xl font-bold hover:scale-105 transition-all duration-300 ring-4 ring-white/10"
             style={{ backgroundColor: '#F28C38', color: 'white' }}
           >
-            <a href="mailto:contact@placemax.in?subject=Request for Free Pilot&body=I am interested in a free pilot for our college.">
+            <a href="mailto:placemax.info@gmail.com?subject=Request for Free Pilot&body=I am interested in a free pilot for our college.">
               Get a Free Pilot
               <ArrowRight className="w-6 h-6 ml-3" />
             </a>
@@ -58,7 +58,7 @@ export function Hero() {
               borderColor: 'white'
             }}
           >
-            <a href="mailto:contact@placemax.in?subject=Request for Free Assessment&body=I would like to request a free assessment for our students.">
+            <a href="mailto:placemax.info@gmail.com?subject=Request for Free Assessment&body=I would like to request a free assessment for our students.">
               <FileCheck className="w-6 h-6 mr-3" />
               Get Free Assessment
             </a>
