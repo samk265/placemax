@@ -3,27 +3,27 @@ import { Linkedin, Twitter, Mail, MapPin, Phone } from 'lucide-react';
 export function Footer() {
   const footerLinks = {
     product: [
-      { label: 'Features', href: '#features' },
-      { label: 'How It Works', href: '#how-it-works' },
-      { label: 'Pricing', href: '#' },
-      { label: 'Case Studies', href: '#' },
+      { label: 'Features', href: '/#features' },
+      { label: 'How It Works', href: '/#how-it-works' },
+      { label: 'Pricing', href: '/#' },
+      { label: 'Case Studies', href: '/#' },
     ],
     company: [
-      { label: 'About Us', href: '#about' },
-      { label: 'Careers', href: '#' },
-      { label: 'Blog', href: '#' },
+      { label: 'About Us', href: '/#about' },
+      { label: 'Careers', href: '/#' },
+      { label: 'Blog', href: '/blog' },
       { label: 'Contact', href: 'mailto:placemax.info@gmail.com' },
     ],
     resources: [
-      { label: 'Documentation', href: '#' },
-      { label: 'Help Center', href: '#' },
-      { label: 'Partners', href: '#' },
-      { label: 'Community', href: '#' },
+      { label: 'Documentation', href: '/#' },
+      { label: 'Help Center', href: '/#' },
+      { label: 'Partners', href: '/#' },
+      { label: 'Community', href: '/#' },
     ],
     legal: [
-      { label: 'Privacy Policy', href: '#' },
-      { label: 'Terms of Service', href: '#' },
-      { label: 'Cookie Policy', href: '#' },
+      { label: 'Privacy Policy', href: '/#' },
+      { label: 'Terms of Service', href: '/#' },
+      { label: 'Cookie Policy', href: '/#' },
     ],
   };
 

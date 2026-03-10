@@ -1,15 +1,17 @@
 import { Button } from './ui/button';
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import { Link } from 'react-router';
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { label: 'Features', href: '#features' },
-    { label: 'How It Works', href: '#how-it-works' },
-    { label: 'About', href: '#about' },
-    { label: 'Contact', href: '#contact' },
+    { label: 'Features', href: '/#features' },
+    { label: 'How It Works', href: '/#how-it-works' },
+    { label: 'About', href: '/#features' },
+    { label: 'Blog', href: '/blog' },
+    { label: 'Contact', href: '/#contact' },
   ];
 
   return (
@@ -18,26 +20,26 @@ export function Navigation() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center">
-            <a href="#" className="flex items-center gap-2">
+            <Link to="/" className="flex items-center gap-2">
               <img
                 src="/logo.png"
                 alt="PlaceMax Logo"
                 className="h-14 w-auto"
               />
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.label}
-                href={item.href}
+                to={item.href}
                 className="font-medium transition-colors hover:opacity-80"
                 style={{ color: '#1F4E79' }}
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
             <Button
               asChild
@@ -64,15 +66,15 @@ export function Navigation() {
         {isOpen && (
           <div className="md:hidden py-4 space-y-4" style={{ borderTop: '1px solid #E5E7EB' }}>
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.label}
-                href={item.href}
+                to={item.href}
                 className="block py-2 font-medium transition-colors"
                 style={{ color: '#1F4E79' }}
                 onClick={() => setIsOpen(false)}
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
             <Button
               asChild
